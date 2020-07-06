@@ -3,7 +3,7 @@ import { Component, Input, ElementRef, EventEmitter, Output } from '@angular/cor
 @Component({
   selector: 'hello',
   template: `<h1>Hello {{name}}!</h1> <span *ngIf="appliedData">Random String = {{ appliedData.random }}</span> <h4 class="loader" *ngIf="loader">Loading...</h4>`,
-  styles: [`:host{ padding: 2rem;} h1 { font-family: Lato; } `]
+  styles: [`:host{ padding: 2rem;} h1 { font-family: Lato; } .loader { position: absolute; top: 0rem; left: 2rem; }`]
 })
 export class HelloComponent  {
   @Input() name = 0;
