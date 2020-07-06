@@ -120,6 +120,6 @@ export class AppComponent  {
   }
 
   trackByFunc(i, x) {
-    return i//x.hue;
+    return x.hue;
   }
 }

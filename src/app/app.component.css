@@ -11,6 +11,7 @@ p {
 .el {
   flex-basis: 50%;
   min-height: 33vh;
+  position: relative;
 }
 .tools{
   position: fixed;
