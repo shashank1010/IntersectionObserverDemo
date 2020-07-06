@@ -1,0 +1,10 @@
+<div class="d-flex flex-wrap">
+  <hello (click)="remove(i)" [data]=data class="el" *ngFor="let x of arr; let i = index; trackBy:trackByFunc" [name]="x.hue" [ngStyle]="x.bg"></hello>
+  <div class="tools">
+    <button (click)=refreshColors()>Refresh!</button>
+    <button (click)=clickity()>Click ME!</button>
+  </div>
+  <div class="toast" *ngIf="showToast">
+    Added some global data. Cards not in view will updated only on scroll.<br /><small>Psst.. also see console 😉</small>
+  </div>
+</div>
